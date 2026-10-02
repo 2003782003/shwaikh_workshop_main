@@ -2,6 +2,7 @@
   "name": "webapp",
   "type": "module",
   "scripts": {
+    "start": "react-scripts start",
     "dev": "vite",
     "preview": "wrangler pages dev",
     "cf-typegen": "wrangler types --env-interface CloudflareBindings",
@@ -12,7 +13,6 @@
     "postdeploy": "echo 'Deployment complete!'",
     "deploy": "gh-pages -d build"
   },
-  "start": "react-scripts start",
   "homepage": "https://github.com/2003782003/shwaikh_workshop_main.git",
   "dependencies": {
     "gh-pages": "^6.3.0",
