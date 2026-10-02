@@ -1,0 +1,27 @@
+{
+  "name": "webapp",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "preview": "wrangler pages dev",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "postdeploy": "echo 'Deployment complete!'",
+    "deploy": "gh-pages -d build"
+  },
+  "start": "react-scripts start",
+  "homepage": "https://github.com/2003782003/shwaikh_workshop_main.git",
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "hono": "^4.12.12"
+  },
+  "devDependencies": {
+    "@hono/vite-build": "^1.2.0",
+    "@hono/vite-dev-server": "^0.18.2",
+    "vite": "^6.3.5",
+    "wrangler": "^4.4.0"
+  }
+}
